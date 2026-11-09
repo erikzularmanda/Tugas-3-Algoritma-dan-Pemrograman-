@@ -1,0 +1,35 @@
+Mulai
+Masukkan golongan Karyawan (A/B/C)
+
+Jika golongan bukan A, B, atau C, Maka
+    Tampilkan ("Golongan Tidak Valid")
+    Selesai
+Jika golongan adalah A, Maka
+    set gajiPokok = 5000000
+Jika golongan adalah B, Maka
+    set gajiPokok = 65000000
+Jika golongan adalah C, Maka
+    set gajiPokok = 9500000
+
+Masukkan Jumlah Jam Lembur
+
+Jika jumlah jam lembur = 0, Maka
+    set gajiLembur = 0
+Jika jumlah jam lembur = 1, Maka
+    set gajiLembur = 0.30 * gajiPokok
+Jika jam lembur = 2, Maka
+    set gajiLembur = 0.32 * gajiPokok
+Jika jam lembur = 3, Maka
+    set gajiLembur = 0.34 * gajiPokok
+Jika jam lembur = 4, Maka
+    set gajiLembur = 0.36 * gajiPokok
+Jika jam lembur >= 5, Maka
+    set gajiLembur = 0.38 * gajiPokok
+
+set totalPenghasilan = gajiPokok + gajiLembur
+Tampilkan ("===Hasil Perhitungan===")
+Tampilkan ("Golongan = ", golongan)
+Tampilkan ("Gaji Pokok = Rp ", gajiPokok)
+Tampilkan ("Gaji Lembur = Rp ", gajiLembur)
+Tampilkan ("Total Penghasilan = Rp ", totalPenghasilan)
+Selesai
